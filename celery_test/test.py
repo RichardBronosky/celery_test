@@ -2,7 +2,7 @@ from sys import argv
 from celery_test.tasks import add
 
 def main():
-    val = [4, 4]
+    val = [32, 16] # default values to use in case non-integers are passed
     for i in range(2):
         try:
             val[i] = int(argv[i+1])
