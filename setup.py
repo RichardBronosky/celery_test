@@ -68,6 +68,8 @@ setup(
     entry_points={
         'console_scripts': [
             'celery_test=celery_test.test:main',
+            'celery_test_worker=celery_test.run_celery:worker',
+            'celery_test_beat=celery_test.run_celery:beat',
         ],
     },
 )
